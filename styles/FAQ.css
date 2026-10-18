@@ -1,0 +1,351 @@
+@import "../global.css";
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.hero-faq {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: clamp(20px, 4vw, 35px);
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.hero-faq > span {
+  display: inline-block;
+  background-color: #dee9fc;
+  color: #005645;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.hero-faq h1 {
+  font-size: clamp(24px, 3.5vw, 34px);
+  color: #121c2a;
+  margin-bottom: 10px;
+}
+
+.hero-faq > p {
+  color: #3f4945;
+  font-size: 16px;
+  max-width: 800px;
+  margin-bottom: 25px;
+}
+
+.hero-faq form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 650px;
+  width: 100%;
+}
+
+.hero-faq form label {
+  display: none;
+}
+
+.hero-faq form input[type="search"] {
+  flex: 1 1 250px;
+  padding: 12px 16px;
+  font-size: 15px;
+}
+
+.hero-faq form button {
+  padding: 12px 24px;
+  font-size: 15px;
+}
+
+.sanfona-duvidas {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.sanfona-duvidas > span {
+  color: #005645;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.sanfona-duvidas > h2 {
+  font-size: clamp(22px, 3.5vw, 28px);
+  color: #121c2a;
+  margin: 6px 0 25px 0;
+}
+
+.sanfona-duvidas article {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+details {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+}
+
+details[open] {
+  border-color: #005645;
+}
+
+summary {
+  padding: 18px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #121c2a;
+  cursor: pointer;
+  background-color: #ffffff;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "+";
+  font-size: 20px;
+  color: #005645;
+  font-weight: bold;
+}
+
+details[open] summary::after {
+  content: "−";
+}
+
+details p {
+  padding: 0 20px 20px 20px;
+  font-size: 14px;
+  color: #3f4945;
+  line-height: 1.6;
+}
+
+details ul {
+  padding: 0 20px 20px 40px;
+  font-size: 14px;
+  color: #3f4945;
+  line-height: 1.6;
+}
+
+details li {
+  margin-bottom: 6px;
+}
+
+.secao-emergencia {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: clamp(20px, 4vw, 35px);
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.secao-emergencia > span {
+  color: #99452c;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.secao-emergencia > h2 {
+  font-size: clamp(20px, 3.5vw, 26px);
+  color: #121c2a;
+  margin: 6px 0 8px 0;
+}
+
+.secao-emergencia > p {
+  color: #3f4945;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.secao-emergencia > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+
+.secao-emergencia ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1 1 340px;
+}
+
+.secao-emergencia ol li {
+  background-color: #f8f9ff;
+  border-left: 4px solid #99452c;
+  padding: 16px;
+  border-radius: 0 10px 10px 0;
+}
+
+.secao-emergencia ol h3 {
+  font-size: 16px;
+  color: #121c2a;
+  margin-bottom: 6px;
+}
+
+.secao-emergencia ol p {
+  font-size: 13px;
+  color: #3f4945;
+  line-height: 1.5;
+}
+
+.secao-emergencia aside {
+  background-color: #eff4ff;
+  border: 1px solid #dee9fc;
+  border-radius: 12px;
+  padding: 24px;
+  height: fit-content;
+  flex: 1 1 280px;
+}
+
+.secao-emergencia aside h3 {
+  font-size: 16px;
+  color: #005645;
+  margin-bottom: 16px;
+}
+
+.secao-emergencia dl dt {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6f7975;
+  margin-top: 12px;
+}
+
+.secao-emergencia dl dt:first-child {
+  margin-top: 0;
+}
+
+.secao-emergencia dl dd {
+  font-size: 14px;
+  color: #121c2a;
+  margin-top: 2px;
+}
+
+.formulario-duvida {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: clamp(20px, 4vw, 35px);
+  margin-bottom: 40px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.formulario-duvida > span {
+  color: #005645;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.formulario-duvida > h2 {
+  font-size: clamp(20px, 3.5vw, 26px);
+  color: #121c2a;
+  margin: 6px 0 8px 0;
+}
+
+.formulario-duvida > p {
+  color: #3f4945;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.formulario-duvida form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.formulario-duvida label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #121c2a;
+  margin-bottom: 6px;
+}
+
+.formulario-duvida input,
+.formulario-duvida select,
+.formulario-duvida textarea {
+  width: 100%;
+}
+
+.formulario-duvida button {
+  padding: 14px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* ========================================================
+   RESPONSIVIDADE (FAQ / CENTRAL DE AJUDA)
+   ======================================================== */
+
+@media (max-width: 768px) {
+  .hero-faq,
+  .secao-emergencia,
+  .formulario-duvida {
+    padding: 20px 16px;
+    margin-bottom: 25px;
+  }
+
+  .hero-faq form {
+    flex-direction: column;
+  }
+
+  .hero-faq form button {
+    width: 100%;
+  }
+
+  .secao-emergencia > div {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .secao-emergencia ol,
+  .secao-emergencia aside {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0 12px;
+  }
+
+  summary {
+    padding: 14px 16px;
+    font-size: 15px;
+  }
+
+  details p,
+  details ul {
+    padding: 0 16px 16px 16px;
+  }
+
+  details ul {
+    padding-left: 28px;
+  }
+
+  .formulario-duvida button {
+    width: 100%;
+  }
+}

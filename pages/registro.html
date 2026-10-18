@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patas & Vidas - Registro de Resgates & Prontuário Veterinário</title>
+    <meta name="description" content="Painel de controle clínico, entrada de novos resgates, quarentena, controle de lotes vacinais e distribuição operacional.">
+    <meta name="authors" content="Gabryel Gomes Cerqueira - Murilo Lemos Marques de Souza - Alexander Kenji Kurata Leirião - Pedro Henrique Andrade Santos">
+    <link rel="icon" type="image/svg+xml" href="../ui/svg/favicon.svg">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../styles/registro.css">
+</head>
+<body>
+    <header>
+        <div>
+            <p>Doe ração, seja voluntário ou apadrinhe um animal resgatado</p>
+        </div>
+        <nav>
+            <a href="/principal.html">
+                <img src="/ui/logo.png" alt="Patas & Vidas">
+            </a>
+            <ul>
+                <li><a href="/principal.html">Início</a></li>
+                <li><a href="/pages/adocao.html">Animais para Adoção</a></li>
+                <li><a href="/pages/registro.html">Registro de Resgates</a></li>
+                <li><a href="/pages/carteiravacina.html">Carteira de Vacinas</a></li>
+                <li><a href="/pages/processoadocao.html">Processo de Adoção</a></li>
+                <li><a href="/pages/blogdicas.html">Blog e Dicas</a></li>
+                <li><a href="/pages/FAQ.html">FAQ</a></li>
+                <li><a href="/pages/equipe.html">Equipe</a></li>
+            </ul>
+            <a href="/pages/queradotar.html">Quero Adotar / Apoiar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-registro">
+            <nav aria-label="Migalhas de pão">
+                <ol>
+                    <li><a href="/principal.html">Início</a></li>
+                    <li aria-current="page">Painel de Resgates &amp; Prontuário</li>
+                </ol>
+            </nav>
+            <span>Módulo Clínico &amp; Triagem • Painel Administrativo</span>
+            <h1>Registro de Resgates &amp; Prontuário Veterinário Integrado</h1>
+            <p>Controle unificado de admissão de animais resgatados, fluxo de quarentena epidemiológica, histórico vacinal, exames clínicos e monitoramento da capacidade operacional de abrigos e lares temporários.</p>
+
+            <div>
+                <div>
+                    <strong>34</strong>
+                    <span>Animais em Quarentena Rigorosa</span>
+                </div>
+                <div>
+                    <strong>18</strong>
+                    <span>Em Tratamento Clínico Ativo</span>
+                </div>
+                <div>
+                    <strong>42</strong>
+                    <span>Aptos para Adoção Imediata</span>
+                </div>
+                <div>
+                    <strong>1.420+</strong>
+                    <span>Total de Resgates Documentados</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabela-controle-animais">
+            <span>Gestão de Plantão</span>
+            <h2>Tabela de Controle de Animais Acolhidos</h2>
+            <p>Acompanhamento individualizado de todos os pets sob tutela ativa na rede Patas &amp; Vidas com atualização em tempo real.</p>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Filtros Rápidos do Prontuário</legend>
+
+                    <div>
+                        <label for="filtro-status-clinico">Status Clínico / Fase:</label>
+                        <select id="filtro-status-clinico" name="status">
+                            <option value="">Todos os status</option>
+                            <option value="quarentena">Em Quarentena</option>
+                            <option value="tratamento">Em Tratamento Clínico</option>
+                            <option value="pos-operatorio">Pós-Operatório (Castração)</option>
+                            <option value="apto">Apto para Adoção</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="filtro-local-abrigo">Local de Acolhimento:</label>
+                        <select id="filtro-local-abrigo" name="local">
+                            <option value="">Todos os locais</option>
+                            <option value="sede-central">Abrigo Central (Sede)</option>
+                            <option value="lar-temp-a">Lar Temporário Planalto</option>
+                            <option value="recanto-felino">Recanto dos Felinos</option>
+                            <option value="hospital-parceiro">Hospital Veterinário Parceiro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="filtro-especie-registro">Espécie:</label>
+                        <select id="filtro-especie-registro" name="especie">
+                            <option value="">Todas as espécies</option>
+                            <option value="canino">Caninos</option>
+                            <option value="felino">Felinos</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Aplicar Filtros</button>
+                </fieldset>
+            </form>
+
+            <div class="tabela-container">
+                <table>
+                    <caption>Lista de Animais em Triagem e Acompanhamento Veterinário</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Código / ID</th>
+                            <th scope="col">Nome do Animal</th>
+                            <th scope="col">Espécie &amp; Porte</th>
+                            <th scope="col">Local do Resgate</th>
+                            <th scope="col">Data de Entrada</th>
+                            <th scope="col">Status Sanitário</th>
+                            <th scope="col">Local de Permanência</th>
+                            <th scope="col">Ações Clínicas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">#A-2024-089</th>
+                            <td>Pipoca</td>
+                            <td>Canino • Porte Médio</td>
+                            <td>Jardim Morumbi (Via Pública)</td>
+                            <td>12/11/2025</td>
+                            <td>Apto para Adoção (100% Imunizado)</td>
+                            <td>Abrigo Central - Baia 04</td>
+                            <td><a href="/pages/carteiravacina.html">Ver Carteira de Vacinas</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#A-2024-094</th>
+                            <td>Luna</td>
+                            <td>Felino • Porte Pequeno</td>
+                            <td>Vila Marcondes (Terreno baldio)</td>
+                            <td>18/01/2026</td>
+                            <td>Em Quarentena (Dia 14/21)</td>
+                            <td>Recanto dos Felinos - Box 02</td>
+                            <td><a href="#">Atualizar Exames</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#A-2024-102</th>
+                            <td>Thor</td>
+                            <td>Canino • Porte Grande</td>
+                            <td>Rodovia Raposo Tavares km 560</td>
+                            <td>03/02/2026</td>
+                            <td>Em Tratamento (Fratura distal cicatrizando)</td>
+                            <td>Hospital Veterinário Universitário</td>
+                            <td><a href="#">Ficha Ortopédica</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#A-2024-115</th>
+                            <td>Mel</td>
+                            <td>Canino • Filhote</td>
+                            <td>Bairro Brasil Novo (Caixa de papelão)</td>
+                            <td>20/02/2026</td>
+                            <td>Em Profilaxia (Vermifugação concluída)</td>
+                            <td>Lar Temporário Planalto</td>
+                            <td><a href="/pages/carteiravacina.html">Agendar Vacina V10</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#A-2024-120</th>
+                            <td>Frederico</td>
+                            <td>Felino • Porte Adulto</td>
+                            <td>Parque do Povo (Abandonado)</td>
+                            <td>02/03/2026</td>
+                            <td>Pós-Operatório (Castrado há 3 dias)</td>
+                            <td>Abrigo Central - Ambulatório</td>
+                            <td><a href="#">Checar Cicatrização</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="formulario-admissao-resgate">
+            <span>Entrada de Novos Casos</span>
+            <h2>Formulário de Entrada: Admissão &amp; Triagem Clínica Inicial</h2>
+            <p>Preenchimento obrigatório pelo médico veterinário ou socorrista no ato do recebimento do animal na central de quarentena.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>1. Identificação Básica do Animal Resgatado</legend>
+
+                    <div>
+                        <label for="resgate-nome-provisorio">Nome Provisório do Animal:</label>
+                        <input type="text" id="resgate-nome-provisorio" name="nome_provisorio" placeholder="Ex: Guerreiro, Estrela, Pipoca" required>
+                    </div>
+
+                    <div>
+                        <label for="resgate-especie">Espécie:</label>
+                        <select id="resgate-especie" name="especie" required>
+                            <option value="">Selecione a espécie</option>
+                            <option value="canino">Canina (Cão)</option>
+                            <option value="felino">Felina (Gato)</option>
+                            <option value="outra">Outra espécie silvestre/exótica (notificar IBAMA)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="resgate-sexo">Sexo Biológico:</label>
+                        <select id="resgate-sexo" name="sexo" required>
+                            <option value="macho">Macho</option>
+                            <option value="femea">Fêmea</option>
+                            <option value="indeterminado">Indeterminado (Avaliação pendente)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="resgate-idade-estimada">Idade Estimada:</label>
+                        <select id="resgate-idade-estimada" name="idade_estimada" required>
+                            <option value="lactente">Lactente / Neonato (0 a 2 meses)</option>
+                            <option value="filhote">Filhote (2 a 6 meses)</option>
+                            <option value="jovem">Jovem (6 meses a 1 ano e meio)</option>
+                            <option value="adulto">Adulto (2 a 7 anos)</option>
+                            <option value="idoso">Idoso / Geriátrico (8 anos ou mais)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="resgate-porte">Porte Estimado / Peso Atual:</label>
+                        <input type="text" id="resgate-porte" name="porte_peso" placeholder="Ex: Pequeno (6.5 kg)" required>
+                    </div>
+
+                    <div>
+                        <label for="resgate-pelagem">Padrão de Pelagem e Cor Predominante:</label>
+                        <input type="text" id="resgate-pelagem" name="pelagem" placeholder="Ex: Pelo curto, preto e castanho rajado" required>
+                    </div>
+
+                    <div>
+                        <label for="resgate-microchip">Número de Microchip de Identificação (caso já possua):</label>
+                        <input type="text" id="resgate-microchip" name="microchip" placeholder="Deixar em branco se for implantar novo">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Circunstâncias do Resgate &amp; Origem</legend>
+
+                    <div>
+                        <label for="resgate-data-hora">Data e Horário do Resgate:</label>
+                        <input type="datetime-local" id="resgate-data-hora" name="data_hora_resgate" required>
+                    </div>
+
+                    <div>
+                        <label for="resgate-endereco">Local / Endereço da Ocorrência:</label>
+                        <input type="text" id="resgate-endereco" name="endereco_resgate" placeholder="Rua, número aproximado, bairro ou rodovia" required>
+                    </div>
+
+                    <div>
+                        <label for="resgate-motivo">Motivo / Condição do Resgate:</label>
+                        <select id="resgate-motivo" name="motivo_recolhimento" required>
+                            <option value="abandono-rua">Abandono em via pública ou terreno</option>
+                            <option value="atropelamento">Atropelamento com risco iminente de morte</option>
+                            <option value="maus-tratos">Maus-tratos constatados (Denúncia policial)</option>
+                            <option value="ninhada-desprotegida">Ninhada desprotegida sem a mãe</option>
+                            <option value="tutor-falecido">Falecimento ou hospitalização do tutor original</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="resgate-responsavel">Resgatista / Responsável pelo Transporte:</label>
+                        <input type="text" id="resgate-responsavel" name="responsavel_transporte" placeholder="Nome do voluntário ou protetor independente" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Triagem Clínica Inicial &amp; Conduta Sanitária</legend>
+
+                    <div>
+                        <label for="clinica-escore-corporal">Escore de Condição Corporal (1 a 5):</label>
+                        <select id="clinica-escore-corporal" name="escore_corporal" required>
+                            <option value="1">1 - Caquético / Desnutrição Severa</option>
+                            <option value="2">2 - Abaixo do peso ideal</option>
+                            <option value="3" selected>3 - Escore ideal / Saudável</option>
+                            <option value="4">4 - Sobrepeso</option>
+                            <option value="5">5 - Obeso</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="clinica-temperatura">Temperatura Retal Aferida (°C):</label>
+                        <input type="number" id="clinica-temperatura" name="temperatura_retal" step="0.1" min="35.0" max="43.0" placeholder="Ex: 38.5" required>
+                    </div>
+
+                    <div>
+                        <label for="clinica-parasitas">Presença de Ectoparasitas:</label>
+                        <select id="clinica-parasitas" name="presenca_parasitas" required>
+                            <option value="nenhum">Ausente / Sem infestação visível</option>
+                            <option value="pulgas-moderado">Infestação leve de pulgas</option>
+                            <option value="carrapatos-intenso">Infestação severa de carrapatos (risco erliquiose)</option>
+                            <option value="miase">Presença de miíase (bicheira ativa)</option>
+                            <option value="sarna">Lesões sugestivas de escabiose ou sarna demodécica</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="clinica-ferimentos">Descrição de Ferimentos, Fraturas ou Lesões Visíveis:</label>
+                        <textarea id="clinica-ferimentos" name="ferimentos_descricao" rows="3" placeholder="Relatar cortes, claudicações, secreções oculares, desidratação etc."></textarea>
+                    </div>
+
+                    <div>
+                        <label for="clinica-destinacao">Destinação Imediata do Animal:</label>
+                        <select id="clinica-destinacao" name="destinacao_imediata" required>
+                            <option value="baia-quarentena-a">Baia de Quarentena Individual A (Sede Central)</option>
+                            <option value="isolamento-infeccioso">Isolamento de Doenças Infecciosas / Suspeita Viral</option>
+                            <option value="centro-cirurgico">Encaminhamento Cirúrgico de Emergência</option>
+                            <option value="lar-temporario-quarentena">Lar Temporário Credenciado com Quarentena</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <button type="submit">Cadastrar Resgate &amp; Abrir Prontuário</button>
+                    <button type="reset">Limpar Dados</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="modulo-vacinacao-lotes">
+            <span>Controle Imunológico &amp; Farmácia</span>
+            <h2>Módulo de Vacinação e Profilaxia: Controle de Lotes e Validades</h2>
+            <p>Rastreabilidade sanitária institucional para garantir a imunização segura de todos os animais resgatados antes da doação.</p>
+
+            <div class="tabela-container">
+                <table>
+                    <caption>Inventário de Vacinas e Imunobiológicos em Estoque</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Imunobiológico / Vacina</th>
+                            <th scope="col">Laboratório Fabricante</th>
+                            <th scope="col">Número do Lote</th>
+                            <th scope="col">Data de Validade</th>
+                            <th scope="col">Doses em Estoque</th>
+                            <th scope="col">Doses Aplicadas (Mês)</th>
+                            <th scope="col">Status do Lote</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">V10 Canina Polivalente (Vanguard Plus)</th>
+                            <td>Zoetis Brasil</td>
+                            <td>LT-V10-2025-09</td>
+                            <td>11/2026</td>
+                            <td>48 doses</td>
+                            <td>32 doses</td>
+                            <td>Liberado para Uso</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Antirrábica Canina &amp; Felina (Defensor)</th>
+                            <td>Zoetis Brasil</td>
+                            <td>LT-AR-2025-14</td>
+                            <td>08/2026</td>
+                            <td>65 doses</td>
+                            <td>41 doses</td>
+                            <td>Liberado para Uso</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Quádrupla Felina V4 (Felocell)</th>
+                            <td>Zoetis Brasil</td>
+                            <td>LT-V4-2025-03</td>
+                            <td>04/2026</td>
+                            <td>22 doses</td>
+                            <td>18 doses</td>
+                            <td>Estoque Crítico (Solicitar novo pedido)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Vacina contra Giárdia Canina (Giardiavax)</th>
+                            <td>Virbac Brasil</td>
+                            <td>LT-GD-2025-08</td>
+                            <td>12/2026</td>
+                            <td>35 doses</td>
+                            <td>12 doses</td>
+                            <td>Liberado para Uso</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Vermífugo Amplo Espectro Comprimidos</th>
+                            <td>Bayer / Elanco</td>
+                            <td>LT-VF-2024-88</td>
+                            <td>03/2027</td>
+                            <td>120 doses</td>
+                            <td>75 doses</td>
+                            <td>Liberado para Uso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="distribuicao-operacional">
+            <span>Capacidade Instalada</span>
+            <h2>Gráfico de Distribuição Operacional &amp; Ocupação de Vagas</h2>
+            <p>Monitoramento preventivo para evitar superlotação e assegurar que cada animal receba a atenção e os cuidados dignos que merece.</p>
+
+            <div class="tabela-container">
+                <table>
+                    <caption>Taxa de Ocupação por Unidade de Acolhimento</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Unidade de Acolhimento</th>
+                            <th scope="col">Capacidade Máxima</th>
+                            <th scope="col">Animais Residentes</th>
+                            <th scope="col">Vagas Disponíveis</th>
+                            <th scope="col">Taxa de Ocupação (%)</th>
+                            <th scope="col">Condição Operacional</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Abrigo Central Sede Patas &amp; Vidas</th>
+                            <td>50 vagas</td>
+                            <td>42 animais</td>
+                            <td>8 vagas</td>
+                            <td>84%</td>
+                            <td>Operação Regular Estável</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Rede Integrada de Lares Temporários A</th>
+                            <td>25 vagas</td>
+                            <td>21 animais</td>
+                            <td>4 vagas</td>
+                            <td>84%</td>
+                            <td>Operação Regular Estável</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Recanto Felino Especializado (Gatis)</th>
+                            <td>20 vagas</td>
+                            <td>17 animais</td>
+                            <td>3 vagas</td>
+                            <td>85%</td>
+                            <td>Operação Regular Estável</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hospital Universitário Veterinário (Leitos UTI)</th>
+                            <td>15 vagas</td>
+                            <td>14 animais</td>
+                            <td>1 vaga</td>
+                            <td>93%</td>
+                            <td>Capacidade Quase Máxima</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <div>
+                <h3>Patas &amp; Vidas</h3>
+                <p>Organização Não Governamental dedicada ao resgate, reabilitação clínica, acolhimento digno e intermediação de adoções responsáveis com transparência e respeito à vida animal.</p>
+                <p>Presidente Prudente e região do Oeste Paulista.</p>
+            </div>
+
+            <div>
+                <h4>Navegação Institucional</h4>
+                <ul>
+                    <li><a href="/principal.html">Início &amp; Sobre a ONG</a></li>
+                    <li><a href="/pages/adocao.html">Animais para Adoção</a></li>
+                    <li><a href="/pages/processoadocao.html">Processo de Adoção</a></li>
+                    <li><a href="/pages/queradotar.html">Formulário de Adoção</a></li>
+                    <li><a href="/pages/registro.html">Diário de Resgates</a></li>
+                    <li><a href="/pages/carteiravacina.html">Carteira de Vacinas</a></li>
+                    <li><a href="/pages/blogdicas.html">Blog &amp; Dicas Veterinárias</a></li>
+                    <li><a href="/pages/FAQ.html">Perguntas Frequentes (FAQ)</a></li>
+                    <li><a href="/pages/equipe.html">Equipe do Projeto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contato &amp; Emergências</h4>
+                <address>
+                    <p><a href="mailto:contato@patasevidas.org.br">contato@patasevidas.org.br</a></p>
+                    <p><a href="tel:+551832291000">+55 (18) 3229-1000</a></p>
+                    <p><strong>Plantão Resgate:</strong> (18) 99482-1884</p>
+                    <p>Presidente Prudente - SP • CEP: 19010-000</p>
+                </address>
+            </div>
+
+            <div>
+                <h4>Apoio Institucional</h4>
+                <div class="footer-apoio">
+                    <img src="/ui/fipp.png" alt="Logo FIPP - Unoeste" class="logo-fipp-footer">
+                    <div class="footer-apoio-texto">
+                        <strong>FIPP - Unoeste</strong>
+                        <span>Faculdade de Informática de Presidente Prudente</span>
+                    </div>
+                </div>
+                <p>Projeto de extensão acadêmica integrador em prol do acolhimento, proteção animal e tecnologia humanizada com apoio técnico da FIPP - Unoeste.</p>
+            </div>
+        </div>
+
+        <div>
+            <p>&copy; 2024-2026 ONG Patas &amp; Vidas. Apoiado pela FIPP - Unoeste. Todos os direitos reservados.</p>
+            <p>Política de Privacidade • Termos de Uso • Acessibilidade WCAG 2.1</p>
+        </div>
+    </footer>
+</body>
+</html>

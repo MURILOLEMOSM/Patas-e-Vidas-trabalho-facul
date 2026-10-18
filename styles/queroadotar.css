@@ -1,0 +1,449 @@
+@import "../global.css";
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.hero-intencao {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: clamp(20px, 4vw, 35px);
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.hero-intencao > span {
+  display: inline-block;
+  background-color: #dee9fc;
+  color: #005645;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.hero-intencao h1 {
+  font-size: clamp(24px, 3.5vw, 34px);
+  color: #121c2a;
+  margin-bottom: 10px;
+}
+
+.hero-intencao > p {
+  color: #3f4945;
+  font-size: 16px;
+  max-width: 850px;
+}
+
+.ficha-animal-destaque {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: clamp(20px, 4vw, 35px);
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.ficha-animal-destaque > span {
+  color: #005645;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ficha-animal-destaque > h2 {
+  font-size: clamp(22px, 3.5vw, 26px);
+  color: #121c2a;
+  margin: 6px 0 25px 0;
+}
+
+.ficha-animal-destaque > article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.ficha-animal-destaque figure {
+  flex: 1 1 280px;
+}
+
+.ficha-animal-destaque figure img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: #dee9fc;
+}
+
+.ficha-animal-destaque figcaption {
+  font-size: 12px;
+  color: #6f7975;
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.ficha-animal-destaque article > div {
+  flex: 1 1 340px;
+}
+
+.ficha-animal-destaque article header span {
+  background-color: #a5f2d9;
+  color: #002019;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.ficha-animal-destaque article header h3 {
+  font-size: 24px;
+  color: #121c2a;
+  margin-bottom: 4px;
+}
+
+.ficha-animal-destaque article header p {
+  font-size: 13px;
+  color: #6f7975;
+  margin-bottom: 16px;
+}
+
+.ficha-animal-destaque dl {
+  background-color: #f8f9ff;
+  border: 1px solid #dee9fc;
+  border-radius: 10px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ficha-animal-destaque dt {
+  font-size: 12px;
+  font-weight: 700;
+  color: #005645;
+}
+
+.ficha-animal-destaque dd {
+  font-size: 14px;
+  color: #121c2a;
+  margin-bottom: 8px;
+}
+
+.ficha-animal-destaque article > div > div:last-child {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ficha-animal-destaque article > div > div:last-child a:first-child {
+  background-color: #005645;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ficha-animal-destaque article > div > div:last-child a:first-child:hover {
+  background-color: #1e6f5c;
+  text-decoration: none;
+}
+
+.ficha-animal-destaque article > div > div:last-child a:last-child {
+  background-color: #eff4ff;
+  color: #005645;
+  border: 1px solid #005645;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ficha-animal-destaque article > div > div:last-child a:last-child:hover {
+  background-color: #dee9fc;
+  text-decoration: none;
+}
+
+.ponto-acolhimento {
+  background-color: #eff4ff;
+  border: 1px solid #dee9fc;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+}
+
+.ponto-acolhimento h3 {
+  font-size: 16px;
+  color: #005645;
+  margin-bottom: 8px;
+}
+
+.ponto-acolhimento p {
+  font-size: 13px;
+  color: #3f4945;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.formulario-triagem {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: clamp(20px, 4vw, 35px);
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.formulario-triagem > span {
+  color: #99452c;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.formulario-triagem > h2 {
+  font-size: clamp(22px, 3.5vw, 26px);
+  color: #121c2a;
+  margin: 6px 0 8px 0;
+}
+
+.formulario-triagem > p {
+  color: #3f4945;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.formulario-triagem fieldset {
+  border: 1px solid #dee9fc;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.formulario-triagem legend {
+  font-size: 16px;
+  font-weight: 700;
+  color: #005645;
+  padding: 0 10px;
+}
+
+.formulario-triagem label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #121c2a;
+  margin-bottom: 6px;
+}
+
+.formulario-triagem input[type="text"],
+.formulario-triagem input[type="email"],
+.formulario-triagem input[type="tel"],
+.formulario-triagem input[type="date"],
+.formulario-triagem input[type="number"],
+.formulario-triagem select,
+.formulario-triagem textarea {
+  width: 100%;
+}
+
+.formulario-triagem textarea {
+  grid-column: 1 / -1;
+}
+
+.formulario-triagem fieldset:nth-of-type(5) {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formulario-triagem fieldset:nth-of-type(5) > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.formulario-triagem fieldset:nth-of-type(5) input[type="checkbox"] {
+  margin-top: 4px;
+}
+
+.formulario-triagem fieldset:nth-of-type(5) label {
+  font-size: 13px;
+  font-weight: normal;
+  color: #3f4945;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.formulario-triagem form > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.formulario-triagem button[type="submit"] {
+  background-color: #005645;
+  color: #ffffff;
+  padding: 14px 28px;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.formulario-triagem button[type="submit"]:hover {
+  background-color: #1e6f5c;
+}
+
+.formulario-triagem button[type="reset"] {
+  background-color: #f8f9ff;
+  color: #6f7975;
+  border: 1px solid #bec9c4;
+  padding: 14px 24px;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.formulario-triagem button[type="reset"]:hover {
+  background-color: #dee9fc;
+}
+
+.outras-formas-apoiar {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.outras-formas-apoiar > span {
+  color: #005645;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.outras-formas-apoiar > h2 {
+  font-size: clamp(22px, 3.5vw, 26px);
+  color: #121c2a;
+  margin: 6px 0 8px 0;
+}
+
+.outras-formas-apoiar > p {
+  color: #3f4945;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.outras-formas-apoiar > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.outras-formas-apoiar article {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.outras-formas-apoiar article h3 {
+  font-size: 18px;
+  color: #005645;
+  margin-bottom: 10px;
+}
+
+.outras-formas-apoiar article p {
+  font-size: 13px;
+  color: #3f4945;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.outras-formas-apoiar article a {
+  margin-top: auto;
+  background-color: #eff4ff;
+  color: #005645;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.outras-formas-apoiar article a:hover {
+  background-color: #005645;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ========================================================
+   RESPONSIVIDADE (QUERO ADOTAR / INTENÇÃO DE ADOÇÃO)
+   ======================================================== */
+
+@media (max-width: 768px) {
+  .hero-intencao,
+  .ficha-animal-destaque,
+  .formulario-triagem {
+    padding: 20px 16px;
+    margin-bottom: 25px;
+  }
+
+  .ficha-animal-destaque > article {
+    flex-direction: column;
+  }
+
+  .ficha-animal-destaque figure,
+  .ficha-animal-destaque article > div {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .ficha-animal-destaque figure img {
+    max-height: 240px;
+  }
+
+  .formulario-triagem fieldset {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .formulario-triagem form > div:last-child {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .formulario-triagem button[type="submit"],
+  .formulario-triagem button[type="reset"] {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0 12px;
+  }
+
+  .ficha-animal-destaque article > div > div:last-child {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ficha-animal-destaque article > div > div:last-child a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .outras-formas-apoiar > div {
+    grid-template-columns: 1fr;
+  }
+}

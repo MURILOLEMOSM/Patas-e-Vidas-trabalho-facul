@@ -1,0 +1,322 @@
+@import "../global.css";
+
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.hero-equipe {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: 35px;
+  margin-bottom: 40px;
+}
+
+.hero-equipe > span {
+  display: inline-block;
+  background-color: #dee9fc;
+  color: #005645;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.hero-equipe h1 {
+  font-size: 34px;
+  color: #121c2a;
+  margin-bottom: 12px;
+}
+
+.hero-equipe > p {
+  font-size: 15px;
+  color: #3f4945;
+  max-width: 850px;
+  margin-bottom: 30px;
+}
+
+.hero-equipe > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.hero-equipe > div > div {
+  background-color: #f8f9ff;
+  border: 1px solid #d9e3f6;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.hero-equipe > div strong {
+  display: block;
+  font-size: 26px;
+  color: #005645;
+  margin-bottom: 4px;
+}
+
+.hero-equipe > div span {
+  font-size: 13px;
+  color: #6f7975;
+  font-weight: 500;
+}
+
+.perfis-integrantes {
+  margin-bottom: 50px;
+}
+
+.perfis-integrantes > span {
+  color: #99452c;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.perfis-integrantes > h2 {
+  font-size: 28px;
+  color: #121c2a;
+  margin: 6px 0 25px 0;
+}
+
+.perfis-integrantes > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 25px;
+}
+
+.perfis-integrantes article {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(18, 28, 42, 0.04);
+}
+
+.perfis-integrantes figure {
+  margin-bottom: 15px;
+}
+
+.perfis-integrantes figure img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: #eff4ff;
+  border: 2px solid #005645;
+  padding: 6px;
+}
+
+.perfis-integrantes figcaption {
+  display: none;
+}
+
+.perfis-integrantes article h3 {
+  font-size: 18px;
+  color: #121c2a;
+  margin-bottom: 4px;
+}
+
+.perfis-integrantes article header p {
+  font-size: 13px;
+  color: #005645;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.perfis-integrantes article > p {
+  font-size: 13px;
+  color: #3f4945;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.perfis-integrantes dl {
+  background-color: #f8f9ff;
+  border: 1px solid #eff4ff;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.perfis-integrantes dt {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6f7975;
+  margin-top: 6px;
+}
+
+.perfis-integrantes dt:first-child {
+  margin-top: 0;
+}
+
+.perfis-integrantes dd {
+  font-size: 12px;
+  color: #121c2a;
+}
+
+.perfis-integrantes article > div {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.perfis-integrantes article > div a:first-child {
+  background-color: #005645;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.perfis-integrantes article > div a:first-child:hover {
+  background-color: #1e6f5c;
+  text-decoration: none;
+}
+
+.perfis-integrantes article > div a:last-child {
+  background-color: #f8f9ff;
+  color: #121c2a;
+  border: 1px solid #bec9c4;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.perfis-integrantes article > div a:last-child:hover {
+  background-color: #dee9fc;
+  text-decoration: none;
+}
+
+.matriz-atribuicoes {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.matriz-atribuicoes > span {
+  color: #005645;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.matriz-atribuicoes > h2 {
+  font-size: 26px;
+  color: #121c2a;
+  margin: 6px 0 8px 0;
+}
+
+.matriz-atribuicoes > p {
+  color: #3f4945;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.matriz-atribuicoes caption {
+  display: none;
+}
+
+.matriz-atribuicoes table {
+  margin-top: 15px;
+}
+
+.matriz-atribuicoes td:last-child {
+  font-weight: 600;
+  color: #005645;
+}
+
+.padroes-acessibilidade {
+  margin-bottom: 40px;
+}
+
+.padroes-acessibilidade > span {
+  color: #99452c;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.padroes-acessibilidade > h2 {
+  font-size: 26px;
+  color: #121c2a;
+  margin: 6px 0 8px 0;
+}
+
+.padroes-acessibilidade > p {
+  color: #3f4945;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.padroes-acessibilidade > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.padroes-acessibilidade article {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.padroes-acessibilidade article h3 {
+  font-size: 16px;
+  color: #005645;
+  margin-bottom: 8px;
+}
+
+.padroes-acessibilidade article p {
+  font-size: 13px;
+  color: #3f4945;
+  line-height: 1.5;
+}
+
+/* ========================================================
+   RESPONSIVIDADE (EQUIPE E MATRIZ DE ATRIBUIÇÕES)
+   ======================================================== */
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 16px;
+  }
+
+  .hero-equipe,
+  .matriz-atribuicoes {
+    padding: 20px 16px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0 12px;
+  }
+
+  .hero-equipe > div,
+  .perfis-integrantes > div,
+  .padroes-acessibilidade > div {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-equipe h1 {
+    font-size: 24px;
+  }
+
+  .perfis-integrantes > h2,
+  .matriz-atribuicoes > h2,
+  .padroes-acessibilidade > h2 {
+    font-size: 22px;
+  }
+}

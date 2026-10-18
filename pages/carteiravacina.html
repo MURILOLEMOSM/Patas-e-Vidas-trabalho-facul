@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patas & Vidas - Carteira Digital de Vacinação</title>
+    <meta name="description" content="Doe ração, seja voluntário ou apadrinhe um animal resgatado">
+    <meta name="authors" content="Gabryel Gomes Cerqueira - Murilo Lemos Marques de Souza - Alexander Kenji Kurata Leirião - Pedro Henrique Andrade Santos">
+    <link rel="icon" type="image/svg+xml" href="../ui/svg/favicon.svg">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../styles/carteiravacina.css">
+</head>
+<body>
+    <header>
+        <div>
+            <p>Doe ração, seja voluntário ou apadrinhe um animal resgatado</p>
+        </div>
+        <nav>
+            <a href="/principal.html">
+                <img src="/ui/logo.png" alt="Patas & Vidas">
+            </a>
+            <ul>
+                <li><a href="/principal.html">Início</a></li>
+                <li><a href="/pages/adocao.html">Animais para Adoção</a></li>
+                <li><a href="/pages/registro.html">Registro de Resgates</a></li>
+                <li><a href="/pages/carteiravacina.html">Carteira de Vacinas</a></li>
+                <li><a href="/pages/processoadocao.html">Processo de Adoção</a></li>
+                <li><a href="/pages/blogdicas.html">Blog e Dicas</a></li>
+                <li><a href="/pages/FAQ.html">FAQ</a></li>
+                <li><a href="/pages/equipe.html">Equipe</a></li>
+            </ul>
+            <a href="/pages/queradotar.html">Quero Adotar / Apoiar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <nav aria-label="Migalhas de pão">
+                    <ol>
+                        <li><a href="/principal.html">Início</a></li>
+                        <li><a href="/pages/carteiravacina.html">Prontuário e Vacinas</a></li>
+                        <li aria-current="page">Pipoca (#A-2024-089)</li>
+                    </ol>
+                </nav>
+                <span>Este documento tem fé pública institucional e atesto sanitário veterinário</span>
+            </div>
+
+            <span>Módulo Protegido e Conectado ao Prontuário Clínico do Animal Cadastrado</span>
+            <h1>Carteira Digital de Vacinação & Controle Imunológico</h1>
+            <p>Acompanhamento técnico, histórico de lotes e verificação sanitária dos animais tutelados pela rede da Patas & Vidas antes da liberação para adoção responsável.</p>
+
+            <div>
+                <button type="button">Imprimir Carteirinha</button>
+                <button type="button">Atestado Sanitário PDF</button>
+            </div>
+
+            <div>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Buscar Animal</legend>
+                        <div>
+                            <label for="busca-animal">Identificação / Nome / Microchip</label>
+                            <input type="text" id="busca-animal" name="animal" value="Pipoca (#A-2024-089)" placeholder="Nome ou microchip...">
+                        </div>
+                        <div>
+                            <label for="busca-categoria">Espécie & Categoria</label>
+                            <select id="busca-categoria" name="categoria">
+                                <option value="canino" selected>Canino (Cão Resgatado)</option>
+                                <option value="felino">Felino (Gato Resgatado)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="filtro-vencimento">Filtrar por Vencimento</label>
+                            <input type="text" id="filtro-vencimento" name="vencimento" value="Em Dia / 2024" placeholder="Ex: Em Dia / 2024">
+                        </div>
+                        <button type="submit">Buscar</button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div>
+                <div>
+                    <img src="/ui/pipoca-vacina.jpg" alt="Pipoca">
+                    <span>Fotografia de Identificação e Porte</span>
+                    <span>#A-2024-089</span>
+                </div>
+
+                <div>
+                    <h2>Pipoca</h2>
+                    <span>Status Clínico: 100% Liberado</span>
+                    <p>SRD (Vira-lata) • Macho • Porte Médio (10,8 kg)</p>
+                    <p>Animal resgatado com histórico de intervenção veterinária em Presidente Prudente. Encontra-se desparasitado e com protocolo vacinal ativo. Triagem de compatibilidade comportamental e testes sorológicos de rotina cumpridos. Suporte pós-encaminhamento de adoção assegurado pela rede com provisão de vacinação para reforço no primeiro ano.</p>
+
+                    <div>
+                        <dl>
+                            <dt>Idade Estimada</dt>
+                            <dd>1 Ano e 10 meses</dd>
+
+                            <dt>Data de Resgate</dt>
+                            <dd><time datetime="2024-03-14">14/03/2024</time></dd>
+
+                            <dt>Número do Microchip</dt>
+                            <dd>982000364819124</dd>
+
+                            <dt>Status Reprodutivo</dt>
+                            <dd>Castrado</dd>
+                        </dl>
+                    </div>
+
+                    <div>
+                        <p><strong>Dra. Renata Vasconcelos</strong> - Médica Veterinária (CRMV-SP 42.198 - RT da Associação Patas & Vidas)</p>
+                        <span>Alojamento Provisório: Ala Canil B-04</span>
+                    </div>
+
+                    <div>
+                        <h3>Cobertura Vacinal Geral</h3>
+                        <p><strong>85% Completa</strong> (6 doses aplicadas | 1 agendada)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <span>REGISTRO SANITÁRIO E HISTÓRICO DE APLICAÇÃO</span>
+                <h2>1. Tabela Semântica de Imunização e Reforços Periódicos</h2>
+                <p>Módulo oficial de registro de aplicações, controle de reagentes e profissionais responsáveis por procedimento de vacinação.</p>
+                <ul>
+                    <li>Aplicada</li>
+                    <li>Reforço Pendente</li>
+                    <li>Agendada</li>
+                </ul>
+            </div>
+
+            <div class="tabela-container">
+                <table>
+                    <caption>Histórico de Imunização do Animal</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Vacina / Reagente</th>
+                            <th scope="col">Fabricante & Lote</th>
+                            <th scope="col">Data de Aplicação</th>
+                            <th scope="col">Próximo Reforço</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Responsável Técnico</th>
+                            <th scope="col">Comprovante</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>V10 (Polivalente Canina)</strong>
+                                <br>Cinomiose, Hepatite Infecciosa, Adenovirose, Parvovirose, Coronavirose e Leptospirose
+                            </td>
+                            <td>
+                                Zoetis Vanguard
+                                <br>Lote: #891-23/BR
+                            </td>
+                            <td>
+                                <time datetime="2024-03-24">24/03/2024</time>
+                                <br>(Dose 01 de Resgate)
+                            </td>
+                            <td>
+                                <time datetime="2024-04-14">14/04/2024</time>
+                                <br>Ref. 21 Dias
+                            </td>
+                            <td><span>Aplicada</span></td>
+                            <td>
+                                Dra. Renata V.
+                                <br>CRMV-SP 42.198
+                            </td>
+                            <td><a href="#">Ver Atestado</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Raiva / Antirrábica</strong>
+                                <br>Imunização obrigatória contra Vírus Rábico. Cepa Pasteur
+                            </td>
+                            <td>
+                                Boehringer Ingelheim
+                                <br>Lote: #RV-5520-23
+                            </td>
+                            <td>
+                                <time datetime="2024-05-10">10/05/2024</time>
+                                <br>(Dose Única Anual)
+                            </td>
+                            <td>
+                                <time datetime="2025-05-10">10/05/2025</time>
+                                <br>Reforço Anual
+                            </td>
+                            <td><span>Aplicada</span></td>
+                            <td>
+                                Dr. Carlos Mendes
+                                <br>CRMV-SP 38.922
+                            </td>
+                            <td><a href="#">Ver Atestado</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Tosse dos Canis (Bronchiguard)</strong>
+                                <br>Bordetella bronchiseptica (Profilaxia Pneumônica)
+                            </td>
+                            <td>
+                                MSD Saúde Animal
+                                <br>Lote: #BR-7788-A
+                            </td>
+                            <td>
+                                <time datetime="2024-06-15">15/06/2024</time>
+                                <br>(1ª Dose Injetável)
+                            </td>
+                            <td>
+                                <time datetime="2024-07-06">06/07/2024</time>
+                                <br>Ref. 21 Dias (Agendada)
+                            </td>
+                            <td><span>Reforço Pendente</span></td>
+                            <td>
+                                Dra. Renata V.
+                                <br>CRMV-SP 42.198
+                            </td>
+                            <td><a href="#">Ver Atestado</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Giardíase (Imunização Giardiavax)</strong>
+                                <br>Antígeno inativado de Giardia lamblia preventiva para infecções intestinais
+                            </td>
+                            <td>
+                                Zoetis
+                                <br>Lote: #GD-1090
+                            </td>
+                            <td>
+                                Aguardando Reforço Tosse
+                                <br>(Protocolo Ativo)
+                            </td>
+                            <td>
+                                <time datetime="2024-08-01">01/08/2024</time>
+                                <br>Planejamento
+                            </td>
+                            <td><span>Programada</span></td>
+                            <td>
+                                Equipe Clínica
+                                <br>Patas & Vidas
+                            </td>
+                            <td><span>Aguardando</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p>Rastreio Biométrico: Amostras autenticadas com sorologia. Testes de não-reatividade anexados ao prontuário.</p>
+                <p>Data do último espelho sanitário: 15/06/2024 • Validade da certificação: Revalidação semestral sob protocolo da equipe.</p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <span>ENDOPARASITAS E ECTOPARASITAS</span>
+                <h2>2. Tabela de Controle de Vermífugos e Antiparasitários</h2>
+                <p>Monitoramento periódico de combate contra pulgas, carrapatos, leishmaniose e vermes gastrointestinais.</p>
+                <a href="#">Última Pesquisa Negativa em 08/06/2024</a>
+            </div>
+
+            <div class="tabela-container">
+                <table>
+                    <caption>Histórico de Vermífugos e Antiparasitários</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Medicamento</th>
+                            <th scope="col">Princípio Ativo</th>
+                            <th scope="col">Dose / Faixa Peso</th>
+                            <th scope="col">Data Administração</th>
+                            <th scope="col">Próxima Dose</th>
+                            <th scope="col">Observações Clínicas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Drontal Plus Cães</strong>
+                            </td>
+                            <td>Praziquantel + Pamoato de Pirantel + Febantel</td>
+                            <td>1 Comp. Oral p/ 10 kg (10,8 kg)</td>
+                            <td><time datetime="2024-03-15">15/03/2024</time></td>
+                            <td><time datetime="2024-09-15">15/09/2024</time> (Repetição Semestral)</td>
+                            <td>Realizada desparasitação obrigatória de resgate com resultado fecal negativo nos exames subsequentes.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Simparic 40 mg</strong>
+                            </td>
+                            <td>Sarolaner 40 mg (Ectoparasiticida)</td>
+                            <td>1 Comprimido (10 a 20 kg)</td>
+                            <td><time datetime="2024-05-18">18/05/2024</time></td>
+                            <td><time datetime="2024-06-18">18/06/2024</time> (Ciclo 35 dias)</td>
+                            <td>Prevenção ativa carrapatos/pulgas e controle preventivo contra sarna. Sem lesões tegumentares identificadas.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Coleira Scalibor</strong>
+                            </td>
+                            <td>Deltametrina 4%</td>
+                            <td>1 Coleira Tam. Médio (48 cm)</td>
+                            <td><time datetime="2024-04-02">02/04/2024</time></td>
+                            <td><time datetime="2024-08-02">02/08/2024</time> (Ciclo 4 meses)</td>
+                            <td>Equipamento repelente contra o mosquito-palha transmissor de Leishmaniose Visceral com uso contínuo.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Protocolo Farmacêutico: O uso de repelente tópico deve ser mantido mesmo durante o período de adaptação pós-adoção.</p>
+        </section>
+
+        <section>
+            <div>
+                <span>DIRETRIZ SANITÁRIA E SAÚDE ANIMAL</span>
+                <h2>3. Calendário Sanitário Básico para Animais em Acolhimento</h2>
+                <p>Conheça as normas técnicas de quarentena, primovacinação e reforços aplicadas pela ONG Patas & Vidas para garantir o acolhimento seguro até a fase de pré-adoção.</p>
+            </div>
+
+            <div>
+                <div>
+                    <h3>Glossário Imunológico Essencial</h3>
+                    <ul>
+                        <li>
+                            <h4>Vacina Polivalente (V8 / V10 em Cães; V3 / V4 / V5 em Gatos)</h4>
+                            <p>Constitui o pilar central de imunização ativa profilática contra Cinomose, Parvovirose, Hepatite Infecciosa, Adenovirose, Coronavirose e Leptospirose. Em gatos, combate Panleucopenia, Rinotraqueíte, Calicivirose, Clamidiose e Leucemia Felina (V5).</p>
+                        </li>
+                        <li>
+                            <h4>Vacina Antirrábica (Raiva Animal)</h4>
+                            <p>Imunização compulsória, perene e obrigatória por lei em todo território nacional. Zoonose letal transmissível aos seres humanos, administrada a partir dos 4 meses de vida com reforço rigorosamente anual.</p>
+                        </li>
+                        <li>
+                            <h4>Janela Imunológica e Quarentena</h4>
+                            <p>Período de 15 a 21 dias onde o animal necessita isolamento profilático frente a outros indivíduos após o resgate ou vacinação, garantindo que não haja disseminação ou infecção cruzada latente antes da consolidação de anticorpos protetores.</p>
+                        </li>
+                        <li>
+                            <h4>Autenticação de Lote e CRMV</h4>
+                            <p>Nenhuma vacina tem validade legal sem o selo original do frasco colado à carteira, com carimbo de CRMV e assinatura do médico veterinário responsável registrado no Conselho de Classe.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Cronograma Sequencial de Resgate</h3>
+                    <p>Entenda cada etapa que o animal acolhido percorre até estar 100% apto à nova família:</p>
+                    <ol>
+                        <li>
+                            <h4>Triagem & Amortização Imediata</h4>
+                            <p>Exames físicos detalhados, checagem de ectoparasitas, contagem sanguínea e estabilização de emergência.</p>
+                        </li>
+                        <li>
+                            <h4>Quarentena de Observação (15 Dias)</h4>
+                            <p>Isolamento profilático e fornecimento controlado de vermífugo de largo espectro.</p>
+                        </li>
+                        <li>
+                            <h4>Primovacinação Polivalente (V8/V10)</h4>
+                            <p>Aplicação da 1ª dose após laudo negativo em triagem clínica; reforços a cada 21 a 28 dias até completar o protocolo.</p>
+                        </li>
+                        <li>
+                            <h4>Dose Antirrábica & Microchipagem</h4>
+                            <p>Imunização contra raiva aos 4 meses e implante subcutâneo de microchip de padrão internacional.</p>
+                        </li>
+                        <li>
+                            <h4>Castração & Emissão de Certificado</h4>
+                            <p>Procedimento cirúrgico esterilizador definitivo e liberação sanitária para adoção responsável.</p>
+                        </li>
+                    </ol>
+                    <p>Dúvidas sobre o processo sanitário? Fale com nosso setor técnico: <a href="mailto:veterinaria@patasevidas.org.br">veterinaria@patasevidas.org.br</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h3>Certificação Sanitária com Chave Pública de Verificação</h3>
+                <p>Todos os documentos impressos gerados por este sistema possuem código hash de autenticidade para validação sanitária em clínicas credenciadas, viagens aéreas e fiscalização dos órgãos de zoonoses.</p>
+                <p>Hash: <strong>91823-883921-998811-A28182</strong> • Chave: <strong>PV-AUTENTICA-2024/089-SP</strong></p>
+            </div>
+            <div>
+                <button type="button">Validar Atestado Sanitário</button>
+                <a href="/pages/processoadocao.html">Fluxo de Adoção</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <div>
+                <h3>Patas &amp; Vidas</h3>
+                <p>Organização Não Governamental dedicada ao resgate, reabilitação clínica, acolhimento digno e intermediação de adoções responsáveis com transparência e respeito à vida animal.</p>
+                <p>Presidente Prudente e região do Oeste Paulista.</p>
+            </div>
+
+            <div>
+                <h4>Navegação Institucional</h4>
+                <ul>
+                    <li><a href="/principal.html">Início &amp; Sobre a ONG</a></li>
+                    <li><a href="/pages/adocao.html">Animais para Adoção</a></li>
+                    <li><a href="/pages/processoadocao.html">Processo de Adoção</a></li>
+                    <li><a href="/pages/queradotar.html">Formulário de Adoção</a></li>
+                    <li><a href="/pages/registro.html">Diário de Resgates</a></li>
+                    <li><a href="/pages/carteiravacina.html">Carteira de Vacinas</a></li>
+                    <li><a href="/pages/blogdicas.html">Blog &amp; Dicas Veterinárias</a></li>
+                    <li><a href="/pages/FAQ.html">Perguntas Frequentes (FAQ)</a></li>
+                    <li><a href="/pages/equipe.html">Equipe do Projeto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contato &amp; Emergências</h4>
+                <address>
+                    <p><a href="mailto:contato@patasevidas.org.br">contato@patasevidas.org.br</a></p>
+                    <p><a href="tel:+551832291000">+55 (18) 3229-1000</a></p>
+                    <p><strong>Plantão Resgate:</strong> (18) 99482-1884</p>
+                    <p>Presidente Prudente - SP • CEP: 19010-000</p>
+                </address>
+            </div>
+
+            <div>
+                <h4>Apoio Institucional</h4>
+                <div class="footer-apoio">
+                    <img src="/ui/fipp.png" alt="Logo FIPP - Unoeste" class="logo-fipp-footer">
+                    <div class="footer-apoio-texto">
+                        <strong>FIPP - Unoeste</strong>
+                        <span>Faculdade de Informática de Presidente Prudente</span>
+                    </div>
+                </div>
+                <p>Projeto de extensão acadêmica integrador em prol do acolhimento, proteção animal e tecnologia humanizada com apoio técnico da FIPP - Unoeste.</p>
+            </div>
+        </div>
+
+        <div>
+            <p>&copy; 2024-2026 ONG Patas &amp; Vidas. Apoiado pela FIPP - Unoeste. Todos os direitos reservados.</p>
+            <p>Política de Privacidade • Termos de Uso • Acessibilidade WCAG 2.1</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+```

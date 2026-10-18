@@ -1,0 +1,88 @@
+===============================================================================
+                       DOCUMENTO DE ESPECIFICAÇÃO DO SISTEMA
+===============================================================================
+
+💻 1. Visão Geral do Sistema
+-------------------------------------------------------------------------------
+A plataforma atua em duas frentes integradas:
+
+* Área Pública: Atração de adotantes, educação sobre bem-estar animal, 
+  transparência de dados e captação de recursos/voluntários.
+* Área Interna (Painel Administrativo/Clínico): Controle rigoroso de entrada 
+  de animais, acompanhamento de quarentena, triagem de formulários, prontuário 
+  médico e histórico vacinal.
+
+🛠️ 2. Arquitetura de Páginas e Telas (Escopo de Navegação)
+-------------------------------------------------------------------------------
+
+🖥️ Painel Público (Portal do Cidadão)
+
+* Home Page (Acolhimento & Engajamento):
+  - Hero section com proposta de valor e busca rápida.
+  - Métricas de impacto em tempo real (Animais resgatados, adotados, etc.).
+  - Vitrine de animais em destaque com filtros básicos.
+  - Seção explicativa do fluxo de resgate e adoção (passo a passo).
+  - Sessão de depoimentos ("Finais Felizes").
+
+* Vitrine de Adoção Completa:
+  - Filtros avançados (Espécie, idade, porte, sexo, temperamento).
+  - Cards detalhados com foto, nome e tags de comportamento.
+
+* Ficha Detalhada do Animal & Formulário de Intenção:
+  - Perfil do pet com histórico, nível de energia e compatibilidade.
+  - Mapa de localização do ponto de acolhimento.
+  - Formulário de Triagem Prévia: Dados do adotante, infraestrutura do lar, 
+    rotina e aceitação dos termos de responsabilidade.
+
+* Processo de Adoção Consciente (Página Informativa):
+  - Explicação detalhada das 5 etapas do fluxo.
+  - Tabela comparativa de requisitos obrigatórios por tipo de animal.
+  - Termo de compromisso e guarda responsável explicativo.
+
+* Blog & Dicas de Bem-Estar Animal:
+  - Artigos técnicos, guias práticos e protocolos de quarentena.
+  - Seção de downloads de materiais (Cartilhas em PDF).
+
+* Central de Ajuda (FAQ):
+  - Busca por palavras-chave e sanfona (accordion) de dúvidas comuns.
+  - Seção de emergência (O que fazer ao achar um animal de rua).
+
+🔐 Painel Administrativo, Clínico & Triagem (Área Restrita)
+
+* Registro de Resgates & Prontuário Veterinário Integrado:
+  - Dashboard analítico (Total em quarentena, tratados, aptos para adoção).
+  - Tabela de controle de animais com filtros por status e local.
+
+* Módulo de Vacinação e Profilaxia:
+  - Controle de lotes, datas de aplicação e próximas doses.
+
+* Gráfico de Distribuição Operacional:
+  - Divisão de pets por abrigos ou lares temporários.
+
+* Formulário de Entrada:
+  - Dados de identificação do animal, circunstâncias do resgate (localização) 
+    e triagem clínica inicial.
+
+* Carteira Digital de Vacinação (Visão Compartilhável):
+  - Página exportável com linha do tempo de imunização e controle de vermífugos.
+  - Certificação sanitária com chave pública de verificação (garantia de 
+    autenticidade para o adotante).
+
+* Gestão de Equipe & Portfólio Interno:
+  - Listagem dos responsáveis técnicos pelo projeto, suas funções e 
+    atribuições no desenvolvimento da plataforma.
+
+🎨 3. Especificações de Design & UI/UX (Mapeado das Imagens)
+-------------------------------------------------------------------------------
+* Design System (Material 3 Adaptado): O projeto utiliza uma paleta focada em 
+  tons de verde escuro semântico (confiança/saúde), coral (afetividade) e 
+  fundos claros acinzentados/azulados (--surface: #f8f9ff).
+* Acessibilidade Focada: Alto contraste de texto seguindo diretrizes WCAG 2.1 AA 
+  (conforme evidenciado na tela de equipe), uso correto de rótulos e tipografia 
+  legível combinando as fontes Plus Jakarta Sans e Inter.
+
+⚙️ 4. Requisitos Tecnológicos Sugeridos
+-------------------------------------------------------------------------------
+* Front-end: HTML5 Semântico, CSS3 estruturado através do arquivo global.css,
+  Sem o uso de JavaScript ou frameworks como React/Vue.
+================================================================---------------

@@ -1,0 +1,320 @@
+@import "../global.css";
+
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.hero-processo {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: 35px;
+  margin-bottom: 40px;
+}
+
+.hero-processo > span {
+  display: inline-block;
+  background-color: #dee9fc;
+  color: #005645;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.hero-processo h1 {
+  font-size: 34px;
+  color: #121c2a;
+  margin-bottom: 12px;
+}
+
+.hero-processo > p {
+  font-size: 15px;
+  color: #3f4945;
+  max-width: 850px;
+  margin-bottom: 30px;
+}
+
+.hero-processo > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.hero-processo > div > div {
+  background-color: #f8f9ff;
+  border: 1px solid #d9e3f6;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.hero-processo > div strong {
+  display: block;
+  font-size: 26px;
+  color: #005645;
+  margin-bottom: 4px;
+}
+
+.hero-processo > div span {
+  font-size: 13px;
+  color: #6f7975;
+  font-weight: 500;
+}
+
+.etapas-fluxo {
+  margin-bottom: 50px;
+}
+
+.etapas-fluxo > span {
+  color: #99452c;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.etapas-fluxo > h2 {
+  font-size: 28px;
+  color: #121c2a;
+  margin: 6px 0 8px 0;
+}
+
+.etapas-fluxo > p {
+  color: #3f4945;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.etapas-fluxo ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.etapas-fluxo article {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 12px rgba(18, 28, 42, 0.04);
+}
+
+.etapas-fluxo article span {
+  display: inline-block;
+  background-color: #a5f2d9;
+  color: #002019;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  margin-bottom: 10px;
+}
+
+.etapas-fluxo article h3 {
+  font-size: 20px;
+  color: #121c2a;
+  margin-bottom: 10px;
+}
+
+.etapas-fluxo article > p {
+  font-size: 14px;
+  color: #3f4945;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.etapas-fluxo article ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px;
+}
+
+.etapas-fluxo article ul li {
+  background-color: #eff4ff;
+  border-left: 3px solid #005645;
+  padding: 10px 14px;
+  border-radius: 0 6px 6px 0;
+  font-size: 13px;
+  color: #121c2a;
+}
+
+.requisitos-comparativos {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.requisitos-comparativos > span {
+  color: #005645;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.requisitos-comparativos > h2 {
+  font-size: 26px;
+  color: #121c2a;
+  margin: 6px 0 8px 0;
+}
+
+.requisitos-comparativos > p {
+  color: #3f4945;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.requisitos-comparativos caption {
+  display: none;
+}
+
+.termo-responsabilidade {
+  margin-bottom: 50px;
+}
+
+.termo-responsabilidade > span {
+  color: #99452c;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.termo-responsabilidade > h2 {
+  font-size: 26px;
+  color: #121c2a;
+  margin: 6px 0 8px 0;
+}
+
+.termo-responsabilidade > p {
+  color: #3f4945;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.termo-responsabilidade > div:first-of-type {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.termo-responsabilidade article {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.termo-responsabilidade article h3 {
+  font-size: 16px;
+  color: #005645;
+  margin-bottom: 8px;
+}
+
+.termo-responsabilidade article p {
+  font-size: 13px;
+  color: #3f4945;
+  line-height: 1.5;
+}
+
+.termo-responsabilidade > div:last-of-type {
+  background-color: #005645;
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 35px;
+  text-align: center;
+}
+
+.termo-responsabilidade > div:last-of-type h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.termo-responsabilidade > div:last-of-type p {
+  font-size: 15px;
+  color: #eaf1ff;
+  margin-bottom: 25px;
+}
+
+.termo-responsabilidade > div:last-of-type a {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.termo-responsabilidade > div:last-of-type a:first-of-type {
+  background-color: #99452c;
+  color: #ffffff;
+}
+
+.termo-responsabilidade > div:last-of-type a:first-of-type:hover {
+  background-color: #762b14;
+  text-decoration: none;
+}
+
+.termo-responsabilidade > div:last-of-type a:last-of-type {
+  background-color: #ffffff;
+  color: #005645;
+}
+
+.termo-responsabilidade > div:last-of-type a:last-of-type:hover {
+  background-color: #dee9fc;
+  text-decoration: none;
+}
+
+/* ========================================================
+   RESPONSIVIDADE (PROCESSO DE ADOÇÃO CONSCIENTE)
+   ======================================================== */
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 16px;
+  }
+
+  .hero-processo,
+  .etapas-fluxo article,
+  .requisitos-comparativos,
+  .termo-responsabilidade article {
+    padding: 20px 16px;
+    margin-bottom: 25px;
+  }
+
+  .etapas-fluxo article ul {
+    grid-template-columns: 1fr;
+  }
+
+  .termo-responsabilidade > div:first-of-type {
+    grid-template-columns: 1fr;
+  }
+
+  .termo-responsabilidade > div:last-of-type {
+    padding: 25px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0 12px;
+  }
+
+  .hero-processo > div {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-processo h1 {
+    font-size: 24px;
+  }
+
+  .termo-responsabilidade > div:last-of-type a {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    text-align: center;
+  }
+}

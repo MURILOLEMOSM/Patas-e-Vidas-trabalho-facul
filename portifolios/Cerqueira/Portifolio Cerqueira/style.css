@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    color: white;
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 29%, rgba(255, 0, 0, 1) 100%);
+}
+
+nav {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(255, 4, 4);
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+h2{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+p{
+    margin: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+hr{
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 29%, rgba(255, 0, 0, 1) 100%);
+    padding: 1px;
+    border: none;
+    height: 2px;
+}
+
+.centra{
+    text-align: center; 
+    font-weight: 600;
+    list-style: upper-roman;
+    list-style-position: inside;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #111;
+    color: rgb(255, 60, 60);
+    font-size: 18px;
+}
+
+tr:hover {
+    background-color: rgba(255, 4, 4, 0.2);
+}
+
+img{
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+img:hover{
+    text-align: center;
+    border: 5px solid rgb(255, 4, 4);
+    border-radius: 5px;
+}
+
+.padding{
+    padding: 10px;
+    margin: 20px;
+}
+
+.img-games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.img-games img{
+    margin: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+.img-musicas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-musicas img{
+    width: 300px;
+    height: 280px;
+    margin: 10px;
+}
+
+.img-times{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-times img{
+    width: 300px;
+    height: 350px;
+    margin: 50px;
+}
+
+.img-centra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+}

@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #080f1c;
+    color: #dbe7f5;
+}
+
+header {
+    background-color: #0C121E;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #1E90FF;
+}
+
+header h1 {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1E90FF;
+    text-shadow: 0 0 5px #1E90FF;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+section {
+    text-align: center;
+    padding: 60px 30px;
+    background-color: #101825;
+    margin: 0;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+section p {
+    font-size: 18px;
+    color: #dbe7f5;
+}
+
+footer {
+    background-color: #101825;
+    color: white;
+    text-align: right;
+    padding: 40px;
+}
+
+.logo{
+    width: 3%;
+    height: auto;
+    position: absolute;
+    left: 17%;
+    top: 5%;
+}
+
+.foto{
+    width: 13%;
+    height: 29%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1E90FF;
+    position: absolute;
+    right: 5%;
+    bottom: 50%;
+}
+
+#Escolaridade {
+    background-color: #0C121E;
+}
+
+#Lazer {
+    background-color: #101825;
+}
+
+#Objetivos {
+    background-color: #0C121E;
+}

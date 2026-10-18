@@ -1,0 +1,522 @@
+@import "../global.css";
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+main > section:first-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  padding: clamp(20px, 4vw, 35px);
+  border-radius: 16px;
+  border: 1px solid #d9e3f6;
+  width: 100%;
+}
+
+main > section:first-of-type > span {
+  width: 100%;
+  display: inline-block;
+  background-color: #dee9fc;
+  color: #005645;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+main > section:first-of-type h1 {
+  font-size: clamp(24px, 3.5vw, 32px);
+  color: #121c2a;
+  line-height: 1.2;
+  width: 100%;
+}
+
+main > section:first-of-type p {
+  color: #3f4945;
+  font-size: 15px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+main > section:first-of-type > div:first-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+}
+
+main > section:first-of-type > div:first-of-type > div {
+  background-color: #f8f9ff;
+  border: 1px solid #d9e3f6;
+  border-radius: 12px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 200px;
+}
+
+main > section:first-of-type > div:first-of-type strong {
+  font-size: 28px;
+  color: #005645;
+}
+
+main > section:first-of-type > div:first-of-type span {
+  font-size: 13px;
+  color: #3f4945;
+  font-weight: 500;
+}
+
+main > section:first-of-type > div:last-of-type {
+  width: 100%;
+  background-color: #eff4ff;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #dee9fc;
+}
+
+main > section:first-of-type > div:last-of-type h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #121c2a;
+}
+
+main > section:first-of-type fieldset {
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+main > section:first-of-type legend {
+  display: none;
+}
+
+main > section:first-of-type label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6f7975;
+  margin-bottom: 4px;
+  display: block;
+}
+
+main > section:first-of-type select {
+  width: 100%;
+}
+
+main > section:first-of-type > div:last-of-type > form > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+main > section:first-of-type > div:last-of-type > form > div:last-child button {
+  background-color: #ffffff;
+  color: #121c2a;
+  border: 1px solid #bec9c4;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 9999px;
+}
+
+main > section:first-of-type > div:last-of-type > form > div:last-child button:hover {
+  background-color: #005645;
+  color: #ffffff;
+  border-color: #005645;
+}
+
+main > section:nth-of-type(2) {
+  margin: 50px 0;
+  width: 100%;
+}
+
+main > section:nth-of-type(2) > div:first-child h2 {
+  font-size: clamp(22px, 3.5vw, 26px);
+  color: #121c2a;
+}
+
+main > section:nth-of-type(2) > div:first-child p {
+  color: #3f4945;
+  margin-top: 4px;
+  margin-bottom: 25px;
+}
+
+main > section:nth-of-type(2) > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+
+main > section:nth-of-type(2) article {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(18, 28, 42, 0.04);
+  width: 100%;
+}
+
+main > section:nth-of-type(2) article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #dee9fc;
+}
+
+main > section:nth-of-type(2) article > span {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 12px 16px 0 16px;
+  width: fit-content;
+}
+
+main > section:nth-of-type(2) article > span:first-of-type {
+  background-color: #dee9fc;
+  color: #121c2a;
+}
+
+main > section:nth-of-type(2) article > span:nth-of-type(2) {
+  background-color: #a5f2d9;
+  color: #002019;
+}
+
+main > section:nth-of-type(2) article h3 {
+  font-size: 20px;
+  color: #121c2a;
+  padding: 4px 16px 0 16px;
+}
+
+main > section:nth-of-type(2) article p {
+  padding: 0 16px;
+  font-size: 14px;
+  color: #3f4945;
+  margin-top: 6px;
+}
+
+main > section:nth-of-type(2) article ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px 16px;
+  margin-top: auto;
+}
+
+main > section:nth-of-type(2) article ul li {
+  font-size: 11px;
+  background-color: #eff4ff;
+  color: #005645;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  font-weight: 600;
+}
+
+main > section:nth-of-type(2) article a {
+  background-color: #eff4ff;
+  color: #005645;
+  text-align: center;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  border-top: 1px solid #d9e3f6;
+  text-decoration: none;
+}
+
+main > section:nth-of-type(2) article a:hover {
+  background-color: #005645;
+  color: #ffffff;
+}
+
+#ficha-tecnica {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: clamp(20px, 4vw, 35px);
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+
+#ficha-tecnica > span:first-of-type {
+  width: 100%;
+  font-size: 13px;
+  color: #6f7975;
+}
+
+#ficha-tecnica > h2 {
+  font-size: clamp(22px, 3.5vw, 28px);
+  color: #121c2a;
+  flex: 1 1 300px;
+}
+
+#ficha-tecnica > a {
+  background-color: #005645;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  height: fit-content;
+  align-self: flex-start;
+}
+
+#ficha-tecnica > a:hover {
+  background-color: #1e6f5c;
+  text-decoration: none;
+}
+
+#ficha-tecnica > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1 1 320px;
+}
+
+#ficha-tecnica > div:first-of-type img:first-child {
+  border-radius: 12px;
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  background-color: #dee9fc;
+}
+
+#ficha-tecnica dl {
+  background-color: #f8f9ff;
+  border: 1px solid #d9e3f6;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+#ficha-tecnica dt {
+  font-size: 12px;
+  color: #6f7975;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+#ficha-tecnica dt:first-child {
+  margin-top: 0;
+}
+
+#ficha-tecnica dd {
+  font-size: 14px;
+  color: #121c2a;
+  font-weight: 500;
+}
+
+#ficha-tecnica > div:last-of-type {
+  flex: 1 1 380px;
+}
+
+#ficha-tecnica > div:last-of-type h3 {
+  font-size: 20px;
+  color: #121c2a;
+  margin-bottom: 10px;
+}
+
+#ficha-tecnica > div:last-of-type p {
+  color: #3f4945;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+#ficha-tecnica > div:last-of-type section {
+  background-color: #eff4ff;
+  border: 1px solid #dee9fc;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#ficha-tecnica > div:last-of-type section h4 {
+  font-size: 16px;
+  color: #005645;
+  margin-bottom: 12px;
+}
+
+#ficha-tecnica > div:last-of-type ul,
+#ficha-tecnica > div:last-of-type ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+#ficha-tecnica > div:last-of-type li {
+  font-size: 13px;
+  color: #3f4945;
+  line-height: 1.4;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d9e3f6;
+}
+
+#manifestacao-interesse {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: clamp(20px, 4vw, 35px);
+  margin: 50px auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+#manifestacao-interesse > span {
+  font-size: 13px;
+  color: #99452c;
+  font-weight: 600;
+}
+
+#manifestacao-interesse > h2 {
+  font-size: clamp(22px, 3.5vw, 28px);
+  color: #121c2a;
+  margin-top: 6px;
+}
+
+#manifestacao-interesse > p {
+  color: #3f4945;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+#manifestacao-interesse fieldset {
+  border: 1px solid #dee9fc;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+#manifestacao-interesse legend {
+  font-size: 16px;
+  font-weight: 700;
+  color: #005645;
+  padding: 0 10px;
+}
+
+#manifestacao-interesse fieldset:first-of-type {
+  background-color: #f8f9ff;
+  border-color: #d9e3f6;
+}
+
+#manifestacao-interesse fieldset > div {
+  margin-bottom: 15px;
+}
+
+#manifestacao-interesse fieldset > div label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #121c2a;
+  margin-bottom: 6px;
+}
+
+#manifestacao-interesse input[type="text"],
+#manifestacao-interesse input[type="tel"],
+#manifestacao-interesse input[type="email"],
+#manifestacao-interesse select,
+#manifestacao-interesse textarea {
+  width: 100%;
+}
+
+#manifestacao-interesse button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background-color: #005645;
+  color: #ffffff;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+#manifestacao-interesse button[type="submit"]:hover {
+  background-color: #1e6f5c;
+}
+
+/* ========================================================
+   RESPONSIVIDADE (ADOÇÃO / VITRINE E FICHA)
+   ======================================================== */
+
+@media (max-width: 768px) {
+  main > section:first-of-type {
+    padding: 20px 16px;
+    margin-bottom: 25px;
+    gap: 20px;
+  }
+
+  main > section:first-of-type fieldset {
+    grid-template-columns: 1fr;
+  }
+
+  #ficha-tecnica {
+    flex-direction: column;
+    padding: 20px 16px;
+    margin: 30px 0;
+    gap: 20px;
+  }
+
+  #ficha-tecnica > h2 {
+    width: 100%;
+    flex: none;
+  }
+
+  #ficha-tecnica > a {
+    width: 100%;
+    text-align: center;
+    align-self: stretch;
+  }
+
+  #ficha-tecnica > div:first-of-type,
+  #ficha-tecnica > div:last-of-type {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  #ficha-tecnica > div:last-of-type ul,
+  #ficha-tecnica > div:last-of-type ol {
+    grid-template-columns: 1fr;
+  }
+
+  #manifestacao-interesse {
+    padding: 20px 16px;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  main > section:first-of-type > div:first-of-type > div {
+    flex: 1 1 100%;
+  }
+
+  main > section:nth-of-type(2) > div:last-child {
+    grid-template-columns: 1fr;
+  }
+
+  main > section:first-of-type > div:last-of-type > form > div:last-child {
+    gap: 6px;
+  }
+
+  main > section:first-of-type > div:last-of-type > form > div:last-child button {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,14 @@
+*{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(196, 191, 207);}
+
+.centro{text-align: center; display: flex; justify-content: center;}
+
+.introdução{font-size: 1.8rem; text-align: center; color: rgb(196, 191, 207);}
+
+body{background-image: linear-gradient(to bottom, rgb(16, 4, 37), rgb(26, 3, 31)); font-size: 1.2rem;}
+
+.borda-tabela{border: 1px white solid; border-spacing: 3px; width: 90%; margin: 0 auto;}
+.borda-meio td,th{border: 1px white solid;}
+
+.sobre{width: 30%; margin-left: 0;}
+
+.centro{text-align: center;}

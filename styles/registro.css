@@ -1,0 +1,330 @@
+@import "../global.css";
+
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.hero-registro {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: 35px;
+  margin-bottom: 40px;
+}
+
+.hero-registro > span {
+  display: inline-block;
+  background-color: #dee9fc;
+  color: #005645;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.hero-registro h1 {
+  font-size: 32px;
+  color: #121c2a;
+  margin-bottom: 10px;
+}
+
+.hero-registro > p {
+  color: #3f4945;
+  font-size: 15px;
+  max-width: 850px;
+  margin-bottom: 30px;
+}
+
+.hero-registro > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.hero-registro > div > div {
+  background-color: #f8f9ff;
+  border: 1px solid #d9e3f6;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.hero-registro > div strong {
+  display: block;
+  font-size: 28px;
+  color: #005645;
+  margin-bottom: 4px;
+}
+
+.hero-registro > div span {
+  font-size: 13px;
+  color: #6f7975;
+  font-weight: 500;
+}
+
+.tabela-controle-animais {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.tabela-controle-animais > span {
+  color: #005645;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tabela-controle-animais > h2 {
+  font-size: 24px;
+  color: #121c2a;
+  margin: 6px 0 8px 0;
+}
+
+.tabela-controle-animais > p {
+  color: #3f4945;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.tabela-controle-animais fieldset {
+  background-color: #f8f9ff;
+  border: 1px solid #dee9fc;
+  border-radius: 12px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) auto;
+  gap: 15px;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.tabela-controle-animais legend {
+  font-size: 14px;
+  font-weight: 700;
+  color: #005645;
+  padding: 0 8px;
+}
+
+.tabela-controle-animais label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6f7975;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.tabela-controle-animais select {
+  width: 100%;
+}
+
+.tabela-controle-animais caption {
+  display: none;
+}
+
+.tabela-controle-animais a {
+  background-color: #eff4ff;
+  color: #005645;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.tabela-controle-animais a:hover {
+  background-color: #005645;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.formulario-admissao-resgate {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: 35px;
+  margin-bottom: 40px;
+}
+
+.formulario-admissao-resgate > span {
+  color: #99452c;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.formulario-admissao-resgate > h2 {
+  font-size: 26px;
+  color: #121c2a;
+  margin: 6px 0 8px 0;
+}
+
+.formulario-admissao-resgate > p {
+  color: #3f4945;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.formulario-admissao-resgate fieldset {
+  border: 1px solid #dee9fc;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.formulario-admissao-resgate legend {
+  font-size: 16px;
+  font-weight: 700;
+  color: #005645;
+  padding: 0 10px;
+}
+
+.formulario-admissao-resgate label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #121c2a;
+  margin-bottom: 6px;
+}
+
+.formulario-admissao-resgate input,
+.formulario-admissao-resgate select,
+.formulario-admissao-resgate textarea {
+  width: 100%;
+}
+
+.formulario-admissao-resgate textarea {
+  grid-column: 1 / -1;
+}
+
+.formulario-admissao-resgate form > div:last-child {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.formulario-admissao-resgate button[type="submit"] {
+  background-color: #005645;
+  color: #ffffff;
+  padding: 14px 28px;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.formulario-admissao-resgate button[type="submit"]:hover {
+  background-color: #1e6f5c;
+}
+
+.formulario-admissao-resgate button[type="reset"] {
+  background-color: #f8f9ff;
+  color: #6f7975;
+  border: 1px solid #bec9c4;
+  padding: 14px 24px;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.formulario-admissao-resgate button[type="reset"]:hover {
+  background-color: #dee9fc;
+}
+
+.modulo-vacinacao-lotes,
+.distribuicao-operacional {
+  background-color: #ffffff;
+  border: 1px solid #d9e3f6;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.modulo-vacinacao-lotes > span,
+.distribuicao-operacional > span {
+  font-size: 12px;
+  color: #005645;
+  font-weight: 700;
+}
+
+.modulo-vacinacao-lotes > h2,
+.distribuicao-operacional > h2 {
+  font-size: 22px;
+  color: #121c2a;
+  margin: 6px 0 8px 0;
+}
+
+.modulo-vacinacao-lotes > p,
+.distribuicao-operacional > p {
+  font-size: 14px;
+  color: #3f4945;
+  margin-bottom: 20px;
+}
+
+.modulo-vacinacao-lotes caption,
+.distribuicao-operacional caption {
+  display: none;
+}
+
+/* ========================================================
+   RESPONSIVIDADE (REGISTRO DE RESGATES E TRIAGEM)
+   ======================================================== */
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 16px;
+  }
+
+  .hero-registro,
+  .tabela-controle-animais,
+  .formulario-admissao-resgate,
+  .modulo-vacinacao-lotes,
+  .distribuicao-operacional {
+    padding: 20px 16px;
+    margin-bottom: 25px;
+  }
+
+  .tabela-controle-animais fieldset {
+    grid-template-columns: 1fr;
+  }
+
+  .tabela-controle-animais fieldset button {
+    width: 100%;
+  }
+
+  .formulario-admissao-resgate fieldset {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .formulario-admissao-resgate form > div:last-child {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .formulario-admissao-resgate button[type="submit"],
+  .formulario-admissao-resgate button[type="reset"] {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0 12px;
+  }
+
+  .hero-registro > div {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-registro h1 {
+    font-size: 24px;
+  }
+
+  .formulario-admissao-resgate > h2 {
+    font-size: 22px;
+  }
+}
